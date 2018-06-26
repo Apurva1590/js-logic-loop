@@ -5,10 +5,10 @@
 body {
     font: normal 16px Helvetica, Arial, sans-serif;
     font-size: 18px;
-    
+    padding: 20px;
 }
 
 h1 {
     font-size: 32px;
-    padding: 20px;
+    
 }
