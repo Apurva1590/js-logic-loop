@@ -128,3 +128,62 @@ console.log(cartoons.length);
 var snoopyPosition = cartoons.indexOf('snoopy');
 console.log(snoopyPosition);
 console.log(cartoons[snoopyPosition]);
+
+
+var beers =  ['Lagunitas', 'miller', 'coors', 'bud', 'drink'];
+var beersHtml = '';
+
+//for loop initialization, test, increment
+for(var i=0; i<beers.length; i++){
+    //for loop - each item
+    console.log(beers[i]);
+    beersHtml = beersHtml + '<li>' + beers[i] + '</li>';
+   // console.log(beersHtml);
+}
+document.getElementById('js-beers').innerHTML = beersHtml;
+
+//while loop 
+
+var x = 6; 
+while(x<10){
+    console.log(x);
+    x++;
+}
+
+//Use a for loop to print out the names, followed by 'is my friend'.
+var names = ['Madhuri', 'Deepika', 'Arpita', 'Vishal', 'Anjali'];
+
+for(var r = 0; r < names.length; r++){
+    console.log(names[r]+ " is my friend");
+}
+
+//DOM
+
+var heading = document.getElementById('title');  //get 
+
+console.log(heading.innerText);
+
+var name = 'Steve';
+heading.innerText = 'Welcome ' + name;  //set
+console.log(heading.innerText);
+
+//getElementsByClassName and getElementsByTagName returns arrays
+var secondHeader = document.getElementsByClassName('heading')[1];
+secondHeader.innerText = 'New Text';
+
+//querySelector 
+console.log(document.querySelector('.js-copy').innerText);
+console.log(document.querySelectorAll('.js-copy')[1].innerText);
+
+//write a script to change the content in at least 5 elements
+
+
+
+var len = document.getElementsByClassName('change-me').length;
+for(var q = 0; q < len; q++){
+    
+    document.getElementsByClassName('change-me')[q].innerText = "Changed";
+}
+
+
+
